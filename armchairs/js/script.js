@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let call = document.querySelector(".header__call"),
+    const triggerModal = document.querySelectorAll(".trigger-modal"),
         callForm = document.querySelector(".modal__call"),
         closeForm = document.querySelector(".modal__close");
 
-    //modal
-    call.addEventListener("click", function (e) {
+    // modal
+    triggerModal.forEach(trigger => trigger.addEventListener("click", (e) => {
+        e.preventDefault();
         callForm.style.display = "block";
         document.body.style.overflow = "hidden";
-        e.preventDefault();
-    });
+    }));
 
     closeForm.addEventListener("click", function () {
         callForm.style.display = "none";
+        document.body.style.overflow = "";
     });
 
 
@@ -21,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     im.mask(selector);
 
     //validate forms
-
-    let validateForms = function (selector, rules, succesModal, yaGoal) {
+    let validateForms = function (selector, rules) {
         new window.JustValidate(selector, {
             rules: rules,
             messages: {
@@ -36,5 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
     validateForms(".modal__form", { tel: { required: true } });
     validateForms(".promo__form", { tel: { required: true } });
     validateForms(".request__form", { tel: { required: true } });
-
 });

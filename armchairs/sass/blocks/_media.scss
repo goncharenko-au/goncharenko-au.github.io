@@ -617,30 +617,21 @@
             grid-template-columns: 1fr;
             grid-template-rows: minmax(30px, auto);
             gap: 10px 0;
-            // repeat(9, 1fr);
         }
         &__item {
             text-align: center;
             padding: 0;
             font-size: 14px;
             &:first-child {
-                // grid-row: 5/6;
-                // grid-column: 1/2;
                 display: none;
             }
             &:nth-child(2) {
-                // grid-row: 6/7;
-                // grid-column: 1/2;
                 display: none;
             }
             &:nth-child(3) {
-                // grid-row: 7/8;
-                // grid-column: 1/2;
                 display: none;
             }
             &:nth-child(4) {
-                // grid-row: 8/9;
-                // grid-column: 1/2;
                 display: none;
             }
             &:nth-child(6) {
@@ -702,7 +693,7 @@
             margin-bottom: 20px;
         }
         &__form {
-            margin: 0 auto;
+            // margin: 0 auto;
             &-btn {
                 padding: 15px 39px;
             }
