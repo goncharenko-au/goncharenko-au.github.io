@@ -104,7 +104,7 @@ body {
 }
 .about__stack {
     padding-top: 180px;
-    max-width: 450px;
+    max-width: 460px;
     margin: 0 50px 0 auto;
 }
 @media (max-width: 767px) {
@@ -286,10 +286,14 @@ body {
     content: "\eab0";
 }
 .about__contacts-phone:before {
-    content: "\f098";
+    content: "\f095";
+}
+.about__contacts-insta:before {
+    content: "\f16d";
+    left: 2px;
 }
 .about__contacts-email:before {
-    content: "\f0e0";
+    content: "\f003";
 }
 @-webkit-keyframes color {
     0% {
