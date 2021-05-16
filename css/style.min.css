@@ -112,7 +112,7 @@ body {
 }
 .about__stack {
     padding-top: 180px;
-    max-width: 465px;
+    max-width: 466px;
     margin: 0 50px 0 auto;
 }
 @media (max-width: 767px) {
