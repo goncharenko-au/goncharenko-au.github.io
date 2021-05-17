@@ -67,7 +67,7 @@ body {
     padding-left: 15px;
 }
 .about {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, rgba(100, 129, 133, 0.3) 10%, #071920 100%), url(../img/bg.JPG);
     background-position: 20% 50%;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
     }
 }
 .about__stack {
-    padding-top: 180px;
+    padding-top: 160px;
     max-width: 466px;
     margin: 0 50px 0 auto;
 }
