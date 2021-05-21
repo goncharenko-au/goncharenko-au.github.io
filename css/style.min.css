@@ -205,6 +205,7 @@ body {
 @media (max-width: 450px) {
     .about__work-list {
         margin-right: auto;
+        gap: 7px;
     }
 }
 @media (max-width: 376px) {
