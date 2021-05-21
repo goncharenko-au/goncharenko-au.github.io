@@ -7,7 +7,6 @@
     font-display: block;
 }
 .nav {
-    padding-top: 20px;
     max-width: 350px;
     margin: 0 50px 0 auto;
 }
@@ -72,6 +71,7 @@ body {
     background-position: 20% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px 0;
 }
 .about__title {
     padding-top: 120px;
