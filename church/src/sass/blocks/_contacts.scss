@@ -1,0 +1,71 @@
+.contacts {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    @media (max-width: 767px) {
+        background-position: center -35px;
+        height: 368px;
+    }
+    &__title {
+        font-family: "Trajan Pro 3";
+        font-size: 38px;
+        text-align: center;
+        padding-top: 40px;
+        @media (max-width: 991px) {
+            font-size: 28px;
+        }
+        @media (max-width: 767px) {
+            font-size: 22px;
+        }
+    }
+    &__address {
+        max-width: 775px;
+        padding: 27px;
+        font-style: normal;
+        text-align: center;
+        background-color: #373a46;
+        border-radius: 15px;
+        position: absolute;
+        bottom: -80px;
+        left: calc(50% - 369px);
+        @media (max-width: 767px) {
+            padding-top: 20px;
+            padding-bottom: 29px;
+            left: 7%;
+            right: 7%;
+        }
+        &-city,
+        &-mail {
+            color: #fff1d8;
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+        &-city {
+            margin-bottom: 20px;
+        }
+        &-phone {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+        }
+        &-time {
+            font-size: 16px;
+            color: #bababa;
+            margin-bottom: 18px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

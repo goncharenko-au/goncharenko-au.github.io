@@ -1,0 +1,89 @@
+.online {
+    &__inner {
+        border-bottom: 1px solid #ffd092;
+        padding-bottom: 48px;
+        @media (max-width: 767px) {
+            padding-bottom: 27px;
+        }
+    }
+    &__title {
+        font-family: "Trajan Pro 3";
+        font-size: 28px;
+        margin-bottom: 21px;
+        text-align: center;
+        @media (max-width: 991px) {
+            font-size: 25px;
+        }
+        @media (max-width: 767px) {
+            font-size: 22px;
+            text-align: left;
+            margin-bottom: 36px;
+        }
+        @media (max-width: 374px) {
+            font-size: 20px;
+        }
+    }
+    &__descr {
+        max-width: 930px;
+        width: 100%;
+        margin: 0 auto 50px;
+        font-weight: 200;
+        color: #e4e4e4;
+        @media (max-width: 767px) {
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 65px;
+        }
+        margin-bottom: 65px;
+        &-point {
+            margin-bottom: 20px;
+            line-height: 25px;
+            @media (max-width: 767px) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__rules {
+        text-align: center;
+        margin-bottom: 33px;
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+        &-title {
+            font-family: "Trajan Pro 3";
+            font-size: 22px;
+            margin-bottom: 14px;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                text-align: left;
+                margin-bottom: 18px;
+            }
+            @media (max-width: 374px) {
+                font-size: 13px;
+            }
+        }
+        &-item {
+            color: #ffd092;
+            list-style-type: none;
+            line-height: 44px;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 21px;
+                text-align: left;
+            }
+            &:not(:last-child) {
+                margin-bottom: 25px;
+                @media (max-width: 767px) {
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+    &__wish {
+        text-align: center;
+        color: #fff1d8;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

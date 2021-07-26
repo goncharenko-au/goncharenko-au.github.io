@@ -1,0 +1,117 @@
+@import "libs/normalize.css";
+@import "base/variables";
+@import "base/mixins";
+
+@font-face {
+    font-family: "Trajan Pro 3";
+    src: url("../fonts/TrajanPro3-Regular.eot");
+    src: url("../fonts/TrajanPro3-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/TrajanPro3-Regular.woff2") format("woff2"), url("../fonts/TrajanPro3-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-UltraLight.eot");
+    src: url("../fonts/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.eot");
+    src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-SemiBold.eot");
+    src: url("../fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-size: 18px;
+    color: #fff;
+}
+* {
+    font-family: "Gilroy";
+    margin: 0;
+    padding: 0;
+}
+.inner {
+    background-image: linear-gradient(#cfa299 bottom, #fff);
+    z-index: 5;
+}
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media (max-width: 767px) {
+        padding: 0 30px;
+    }
+}
+.wrapper {
+    padding-top: 70px;
+    background: #292c38 url("../img/church-bg.jpg") top center no-repeat;
+    @media (max-width: 767px) {
+        padding-top: 113px;
+        background-position: center -50px;
+    }
+}
+.title {
+    font-family: "Trajan Pro 3";
+    font-size: 42px;
+    line-height: 45px;
+    text-align: center;
+    padding-left: 64px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../icons/before-candle.png");
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1023px) {
+        font-size: 36px;
+    }
+    @media (max-width: 767px) {
+        font-size: 30px;
+        margin-bottom: 77px;
+        padding-left: 0;
+    }
+    @media (max-width: 374px) {
+        font-size: 26px;
+    }
+    &__wrap {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+}
+
+@import "blocks/order";
+@import "blocks/recording";
+@import "blocks/online";
+@import "blocks/contacts";
+@import "blocks/footer";
