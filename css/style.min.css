@@ -67,10 +67,13 @@ body {
 }
 .about {
     min-height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient(180deg, rgba(100, 129, 133, 0.3) 10%, #071920 100%), url(../img/bg.JPG);
     background-position: 20% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.about__wrapper {
     padding: 20px 0;
 }
 .about__title {
